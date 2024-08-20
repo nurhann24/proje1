@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859955792321",
+    "project_id": "yeni-818f8",
+    "storage_bucket": "yeni-818f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859955792321:android:f57e56fb47ed817c114740",
+        "android_client_info": {
+          "package_name": "com.example.proje1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJGQDlGF0vZU2vkcdK-9Je_u4t0bXTTxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
