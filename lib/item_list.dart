@@ -19,7 +19,6 @@ class _ItemListScreenState extends State<item_list> {
     try {
       QuerySnapshot querySnapshot = await FirebaseFirestore.instance
           .collection('items')
-          .where('status', isEqualTo: 'available')
           .get();
 
       final groupedItems = <String, Map<String, dynamic>>{};
@@ -89,7 +88,7 @@ class _ItemListScreenState extends State<item_list> {
                       Text('Marka: ${item['brand']}'),
                       Text('Model: ${item['model']}'),
                       Text('Raf Numarası: ${item['shelfNumber']}'),
-                      Text('Depodaki Miktar: ${item['count']}'),
+                      Text('Depodaki Miktar: ${item['count'] > 0 ? item['count'].toString() : '0'}'),
                       SizedBox(height: 8.0),
                     ],
                   ),
